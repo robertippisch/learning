@@ -1,0 +1,12 @@
+[user]
+	name = Robert Ippisch
+	email = robert.ippisch.ext@bayer.com
+[credential "http://lev2-proxy.bayerbbs.net:8080"]
+	provider = generic
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[safe]
+	directory = C:/Users/EGHGZ/AppData/Local/Programs/Git/usr/local/flutter
